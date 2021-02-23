@@ -289,11 +289,7 @@ forget to terminate with a Null character (`'\0'`) in the end.
 ## Wrap Up
 
 Well, that's it for today. You can return the components. You can safely
-disconnect the MQTT broker on your container and bring the container down with
-this command. This way, the container won't eat your RAM.
+disconnect the MQTT broker and power-off your VM (from the top right corner of the window, like if you would shout down a real machine)
 
-```bash
-vagrant> exit
-vagrant halt
-```
+
 
