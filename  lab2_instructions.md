@@ -138,17 +138,15 @@ Attaching a valid policy
 remains same as that of an arduino. You can now publish/subscribe to a topic of
 your choice using the commands below.
 
-By default, Vagrant will share your project directory (the directory with the Vagrantfile) to /vagrant.
-
-Publish:
+To Publish:
 
 ```
-vagrant> mosquitto_pub --cafile root_ca.pem --cert client.pem.cert --key client.key -t $topic -m $message -h $broker -p 8883
+mosquitto_pub --cafile root_ca.pem --cert client.pem.cert --key client.key -t $topic -m $message -h $broker -p 8883
 ```
 
-Subscribe:
+To Subscribe:
 ```
-vagrant> mosquitto_sub --cafile root_ca.pem --cert client.pem.cert --key client.key -t $topic -h $broker -p 8883
+mosquitto_sub --cafile root_ca.pem --cert client.pem.cert --key client.key -t $topic -h $broker -p 8883
 ```
 
 Replace `$topic`, `$broker` and `$message` with appropriate topic, broker host name and message respectively.
