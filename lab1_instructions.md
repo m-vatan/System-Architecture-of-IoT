@@ -90,9 +90,9 @@ You should:
 
 1. Download and install Virtualbox on your laptop: https://www.virtualbox.org/wiki/Downloads 
 2. Download the VM from this link:
-3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file
-   a. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
-   b. 
+3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
+4. Check you start the VM. Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left. The used username and password is iotlabs/iotlabs.
+   
 
 
 
