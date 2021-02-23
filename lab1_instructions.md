@@ -96,12 +96,7 @@ You should:
 - Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left. 
 - Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
    
-
-
-
-Navigate to `project_home/iot_labs` and run the following command. This will download ~1.6 GB virtual box consisting of the virtual environment. This will also create a file `id_rsa.pub` in your `project_home/iot_labs`.
-
-Finally, copy the content of the `id_rsa.pub` file from your `project_home/iot_labs` and upload it in moodle.
+(Navigate to `project_home/iot_labs` and run the following command. This will download ~1.6 GB virtual box consisting of the virtual environment. This will also create a file `id_rsa.pub` in your `project_home/iot_labs`. Finally, copy the content of the `id_rsa.pub` file from your `project_home/iot_labs` and upload it in moodle.)
 
 
 ## Lab 1 - Before you begin,
@@ -113,7 +108,7 @@ latency. You will also implement logic to perform actuation on the sensor based
 on user commands.
 
 For the lab we will use Arduino IDE: https://www.arduino.cc/en/Main/Software
-The IDE is already avaialble from the provided VM.
+The IDE is already avaialble from the provided VM and installed in the folder arduinoIDE, and should be start by executing the script _ .arduinoIDE/arduino_
 
 Please do the following:
 
