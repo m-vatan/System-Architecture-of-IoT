@@ -170,12 +170,11 @@ same side as Vcc.
 ![](./figs/breadboard_mkr_1000.png)
 
 Once the hardware is setup, open the Sketch `mqtt_unsecure` available from the Lab1 folder.
-Have a look at the code and understand what it does before uploading the code.
-Use the provided WiFi username and password. Remember to check the ArduinoMqttClient library (Tools->manage Library) was isntalled.
-Compile the code and upload it to the board. 
+Have a look at the code and understand what it does before uploading the code. Change the content of the variable _group = "MyGroup"_
+Use the provided WiFi username and password if needed (check the defined variable from the .h header file). Remember to check the ArduinoMqttClient library (Tools->manage Library) was isntalled. Compile the code and upload it to the board. 
 
 Verify the state of the Arduino board by connecting to the *Monitor* _(in Tools-> Serial monitor)_ in the
-IDE.  You can see the transmitted MQTT messages by subscribing to the topic
+IDE.  You can see the transmitted MQTT messages by subscribing on broker.hivemq.com to the relevant topic
 (read the code to get the relevant topic). **In your ubuntu VM machine**, run
 the following code. Substitute `responseTopic` within the quotes (retain the quotes
 later) with the topic your device is sending the messages into. You may have to
@@ -212,14 +211,16 @@ mosquitto_pub -h broker.hivemq.com -t "commandTopic" -m "command"
 
 ### To do
 
-1. Modify the publisher to transmit messages only when an appropriate command
-   is received.
-2. Modify your subscriber to implement these two commands
+1.  Modify your subscriber to implement these two commands
     1. The **ON** command will turn on the onboard LED. 
     2. Similarly, **OFF** command will turn off the onboard LED.
     3. The **TEMP** command will send the temperature on the appropriate
        response topic, once.
-    4. Any other command will not generate a response.
+    4. Any other command will not generate a response. 
+2. Modify the publisher to transmit messages only when an appropriate **TEMP** command
+   is received.
+3. Test the implementation by sending the **ON**, **OFF** and **TEMP** from your desktop machine (your ubuntu VM machine)
+4. In your report provide a block diagram of the implemented system
 
 Hint: Check
 [String](https://www.arduino.cc/reference/en/language/variables/data-types/stringobject/)
