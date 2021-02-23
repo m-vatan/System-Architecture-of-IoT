@@ -90,8 +90,8 @@ You should:
 
 1. Download and install Virtualbox on your laptop: https://www.virtualbox.org/wiki/Downloads 
 2. Download the VM from this link:
-3. Add/import the downloaded VM into Virtualbox:
-   a. 
+3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file
+   a. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
    b. 
 
 
