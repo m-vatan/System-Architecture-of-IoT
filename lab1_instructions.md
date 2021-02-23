@@ -174,7 +174,7 @@ Have a look at the code and understand what it does before uploading the code. C
 Use the provided WiFi username and password if needed (check the defined variable from the .h header file). Remember to check the ArduinoMqttClient library (Tools->manage Library) was isntalled. Compile the code and upload it to the board. 
 
 Verify the state of the Arduino board by connecting to the *Monitor* _(in Tools-> Serial monitor)_ in the
-IDE.  You can see the transmitted MQTT messages by subscribing on broker.hivemq.com to the relevant topic
+IDE.  You can see the transmitted MQTT messages by subscribing on [broker.hivemq.com](http://www.mqtt-dashboard.com/index.html) to the relevant topic
 (read the code to get the relevant topic). **In your ubuntu VM machine**, in a terminal execute
 the mosquitto_sub command as bellow. Substitute `responseTopic` within the quotes (retain the quotes
 later) with the topic your device is sending the messages into. You may have to
