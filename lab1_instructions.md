@@ -183,7 +183,7 @@ later) with the topic your device is sending the messages into. You may have to
 change the topic, so read the source code.
 
 ```bash
-vagrant> mosquitto_sub -h broker.hivemq.com -t "responseTopic"
+mosquitto_sub -h broker.hivemq.com -t "responseTopic"
 ```
 
 ### To do
@@ -197,20 +197,18 @@ vagrant> mosquitto_sub -h broker.hivemq.com -t "responseTopic"
    library, although you don't have to explain the functionality in the report.
 2. Measure the latency of transmission. Use the function `micros()` to return the current
 state of the timer in microseconds. 
-3. Does the length of the message have an impact on latency of transmission?
-4. What is the value returned by mqttClient.messageQoS() ? What does it means ?
-5. What is the value returned by mqttClient.messageRetain() ? What does it means ?
+3. What is the value returned by mqttClient.messageQoS() ? What does it means ?
+4. What is the value returned by mqttClient.messageRetain() ? What does it means ?
 
 ## Command and Reponse
 
-The code also has a subscriber component built in. Have a look at the function
-`onMqttMessage`. This is called when the device receives a message. To see it
+The code also has a subscriber component built in. Have a look at the subscriber function
+`onMqttMessage`. This is called when the device receives a message on a specific topic. To see it
 working, open another terminal and do the following. Replace "commandTopic" with
-the appropriate topic name and "command" with appropriate message.
+the appropriate topic name and "command" with appropriate message (read and understand the function `onMqttMessage`).
 
 ```bash
-vagrant ssh
-vagrant> mosquitto_pub -h broker.hivemq.com -t "commandTopic" -m "command"
+mosquitto_pub -h broker.hivemq.com -t "commandTopic" -m "command"
 ```
 
 ### To do
@@ -231,8 +229,7 @@ forget to terminate with a Null character (`'\0'`) in the end.
 
 ## Wrap Up
 
-Well, that's it for today. You can return the components. You can safely
-disconnect the MQTT broker and power-off your VM (from the top right corner of the window, like if you would shout down a real machine)
+Well, that's it for this first lab. You can move the the 2nd lab!
 
 
 
