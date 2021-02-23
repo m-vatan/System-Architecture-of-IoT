@@ -92,7 +92,7 @@ You should:
 2. Download the VM from this link:
 3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
 4. Check you can start the VM. 
-- The used username and password is iotlabs/iotlabs.
+- **The used username and password is iotlabs/iotlabs.**
 - Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left. 
 - Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
 - The VM had Atom installed as a possible source code editor
@@ -131,7 +131,7 @@ Insert the Arduino to the breadboard. Make sure that Arduino pins are on either
 sides of the central ridge of the breadboard and that all the pins are inserted
 in the breadboard. (See the image below or ask me if you're unsure).
 
-Now we will verify that Arduino Create has read and write access to the Arduino
+Now we will verify that Arduino IDE has read and write access to the Arduino
 board.  On Arduino Create, create a **New Sketch** and paste the code from
 the file `led.c` available from the folder Lab1. 
 
@@ -155,6 +155,8 @@ First setup the hardware as shown in the circuit diagram below.
 
 ![](./figs/schematic_mkr_1000.png)
 
+**IMPORTANT: Do not flip Vcc and GND connections. Also, do not short Vcc and GND.
+Power the board via the USB cable AFTER you verify that the circuit is correct**
 
 The setup itself should similar to the figure below. The thermistor IC's pin
 numbers are determined by holding the flat end towards you, with pins facing
@@ -165,22 +167,20 @@ of the Vcc and is marked as **DAC0/A0**. Connect the third pin of the Arduino
 to the fourth pin of the Arduino board, marked as **GND**. GND pin is on the
 same side as Vcc. 
 
-**IMPORTANT: Do not flip Vcc and GND connections. Also, do not short Vcc and GND.
-Power the board AFTER you verify that the circuit is correct**
 
 ![](./figs/breadboard_mkr_1000.png)
 
-Once the hardware is setup, create a new sketch and paste the code from `mqtt_unsecure.c`.
+Once the hardware is setup, create a new sketch and paste the code from the file `mqtt_unsecure.c` available from the Lab1 folder.
 Have a look at the code and understand what it does before uploading the code.
 Use the provided WiFi username and password. Remember to installe the ArduinoMqttClient library (Tools->manage Library)
 Compile the code and upload it to the board. 
 
 Verify the state of the Arduino board by connecting to the *Monitor* in the
 IDE.  You can see the transmitted MQTT messages by subscribing to the topic
-(read the code to get the relevant topic). **In your vagrant container**, run
+(read the code to get the relevant topic). **In your ubuntu VM machine**, run
 the following code. Substitute `responseTopic` within the quotes (retain the quotes
 later) with the topic your device is sending the messages into. You may have to
-change the topic, so read the code.
+change the topic, so read the source code.
 
 ```bash
 vagrant> mosquitto_sub -h broker.hivemq.com -t "responseTopic"
