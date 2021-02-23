@@ -95,6 +95,7 @@ You should:
 - The used username and password is iotlabs/iotlabs.
 - Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left. 
 - Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
+- The VM had Atom installed as a possible source code editor
    
 (Navigate to `project_home/iot_labs` and run the following command. This will download ~1.6 GB virtual box consisting of the virtual environment. This will also create a file `id_rsa.pub` in your `project_home/iot_labs`. Finally, copy the content of the `id_rsa.pub` file from your `project_home/iot_labs` and upload it in moodle.)
 
@@ -115,24 +116,6 @@ Please do the following:
 
 ## Hardware and Software setup
 
-### Update project files and Vagrant container
-
-I will refer to the directory with Vagrant file as `project_home`. Update the files in
-the `project_home` by fetching recent changes from the `git`. For linux this would be
-
-```bash
-cd /path/to/project_home
-git reset --hard
-git pull
-```
-
-In the same directory, update your vagrant container and bring it online.
-
-```bash
-vagrant reload
-vagrant up
-```
-
 ### Arduino setup
 
 Collect the board and the required components. You will need:
@@ -140,16 +123,9 @@ Collect the board and the required components. You will need:
 1. [Arduino MKR WiFi1010 board](https://store.arduino.cc/arduino-mkr-wifi-1010)
 2. Breadboard
 3. [Thermistor IC](http://ww1.microchip.com/downloads/en/DeviceDoc/20001942G.pdf)
-4. Upto 5 breadboard connectors
+4. Up to 5 breadboard connectors
 5. A USB type A to USB micro cable
 6. WiFi credentials for Arduino
-
-Meanwhile, set up an IDE for Arduino. For the lab we will use Arduino IDE: [download it here](https://www.arduino.cc/en/Main/Software) and install the IDE on your machine.
-However, you could also use the web-based IDE. To use the web-based IDE, visit [Arduino
-Create](https://create.arduino.cc/), create an account and log in. Click
-`Getting Started`.  Scroll down and click on `Install Arduino Create Platform`.
-Download and install the plugin for your operating system. Once plugin
-installation is verified, you can use the web editor. 
 
 Insert the Arduino to the breadboard. Make sure that Arduino pins are on either
 sides of the central ridge of the breadboard and that all the pins are inserted
@@ -157,7 +133,7 @@ in the breadboard. (See the image below or ask me if you're unsure).
 
 Now we will verify that Arduino Create has read and write access to the Arduino
 board.  On Arduino Create, create a **New Sketch** and paste the code from
-`led.c`. 
+the file `led.c` available from the folder Lab1. 
 
 Verify, upload and save the sketch to the Arduino MKR WiFi 1010 board. If
 everything goes well, you must see a yellow LED blinking on the board.
