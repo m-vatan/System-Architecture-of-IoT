@@ -145,39 +145,8 @@ The overall architecture of the system you will implement is described in the fi
 
 
 In order to subscribe to the messages that your Arduino board would send,
-we need to setup a MQTT client on your desktop. We will install the client
-in the vagrant container.
+we need to setup a MQTT client on your VM. The mosquitto MQTT client was already install on the provided VM (see https://mosquitto.org/download/)
 
-Navigate to `project_home`. Bring up the container and ssh into it using
-terminal.
-
-```bash
-vagrant ssh
-```
-
-**In the vagrant container**, install the MQTT client. (if you see commands
-preceeding with `vagrant>`, then the commands are run inside the container, so
-don't type `vagrant>` in the commands below!)
-
-
-```bash
-vagrant> cd /vagrant
-vagrant> ./install_mosquitto.sh
-```
-Side notes for window users: before runing the script, open the script in vi (vi install_mosquitto.sh), remove the 2 lines (with dd) starting with "cd /etc..." and "sudo curl.." and press escape and enter the comand: 
-``` 
-:set fileformat = unix
-:x
-```
-
-Run the following code in the vagrant container. 
-
-```bash
-vagrant> mosquitto_sub -h test.mosquitto.org -t "#"
-```
-You are receiving all messages from all topics published on test.mosquitto.org. If you get lot of text
-messages as a response, your setup is working as expected. You can quit
-the subscriber using `Ctrl+c`.
 
 ## Arduino + Temperature Sensor
 
