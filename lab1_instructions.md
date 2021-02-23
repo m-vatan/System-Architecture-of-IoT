@@ -174,7 +174,7 @@ Have a look at the code and understand what it does before uploading the code.
 Use the provided WiFi username and password. Remember to check the ArduinoMqttClient library (Tools->manage Library) was isntalled.
 Compile the code and upload it to the board. 
 
-Verify the state of the Arduino board by connecting to the *Monitor* in the
+Verify the state of the Arduino board by connecting to the *Monitor* _(in Tools-> Serial monitor)_ in the
 IDE.  You can see the transmitted MQTT messages by subscribing to the topic
 (read the code to get the relevant topic). **In your ubuntu VM machine**, run
 the following code. Substitute `responseTopic` within the quotes (retain the quotes
