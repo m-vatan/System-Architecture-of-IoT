@@ -219,8 +219,8 @@ mosquitto_pub -h broker.hivemq.com -t "commandTopic" -m "command"
     4. Any other command will not generate a response. 
 2. Modify the publisher to transmit messages only when an appropriate **TEMP** command
    is received.
-3. Test the implementation by sending the **ON**, **OFF** and **TEMP** from your desktop machine (your ubuntu VM machine)
-4. In your report provide a block diagram of the implemented system
+3. Test the implementation by sending the **ON**, **OFF** and **TEMP** commands on the relevant topic from your desktop machine (your ubuntu VM machine)
+4. In your report provide a block diagram of the implemented system and a screenshot of the implemented functions.
 
 Hint: Check
 [String](https://www.arduino.cc/reference/en/language/variables/data-types/stringobject/)
