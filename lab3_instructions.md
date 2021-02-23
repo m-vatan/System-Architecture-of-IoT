@@ -52,26 +52,18 @@ exercise and walks you through discovery and connection management.
 
 ## Setup the hardware
 
-1. Update the repository. Run
-    
-    ```bash
-    $ git reset --hard
-    $ git pull
-    ```
-
-2. We will use Raspberry Pi as the device gateway. The device is already
+1. We will use a Raspberry Pi as the device gateway. The device is already
    powered up and connected to network. To connect to the Raspberry Pi,
    you need the IP address of the gateway. The IP address should be given
    to you during the lab.
-3. To connect to the gateway, power up your vagrant container and ssh into it.
+2. To connect to the gateway, in your VM open a terminal and ssh into it.
    The username is `pi` and password is `raspberry`.
-   Commands run in Raspberry Pi is preceded `pi>` and in vagrant as `vagrant>`.
+   Commands run in Raspberry Pi is preceded `pi>` and in your VM as `vm>`.
 
    ```bash
    $ vagrant up
    $ vagrant ssh
-   vagrant> cd /vagrant
-   vagrant> ssh pi@IPADDRESS
+   vm> ssh pi@IPADDRESS
    ```
 
 ## Setup a Greengrass Group
