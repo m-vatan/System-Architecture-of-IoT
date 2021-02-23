@@ -94,7 +94,7 @@ You should:
 4. Check you can start the VM. 
 - The used username and password is iotlabs/iotlabs.
 - Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left. 
-- Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder)
+- Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
    
 
 
