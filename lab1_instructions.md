@@ -145,7 +145,7 @@ The overall architecture of the system you will implement is described in the fi
 
 
 In order to subscribe to the messages that your Arduino board would send,
-we need to setup a MQTT client on your VM. The mosquitto MQTT client was already install on the provided VM (see https://mosquitto.org/download/)
+we need to setup a MQTT client on your desktop (the unbuntu VM in your case). The mosquitto MQTT client was already install on the provided VM (see https://mosquitto.org/download/)
 
 
 ## Arduino + Temperature Sensor
