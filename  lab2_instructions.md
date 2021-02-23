@@ -31,7 +31,7 @@ the private key and hence the device is secured against leaks in cases when
 access to device is compromised (conditions apply ;) ).
 
 1. To generate a certificate, open the sketch _ECC08CSR_ from the
-   `project_home`.  If you are using Arduino Create, you may have to import
+   `Lab2` folder.  If you are using Arduino Create, you may have to import
    this sketch.  
 2. Open *Monitor* (or *Serial Monitor*) and change *New Line* in the drop down
    to *Both NL & CR*.  Baud rate is set to 9600 by default. Compile and upload
@@ -90,7 +90,7 @@ Now the certificate is ready to be downloaded.
 
 ## Secure MQTT connection
 
-1. Import\Open the sketch `AWS_IoT` from `project_home`. Modify the secrets
+1. Import\Open the sketch `AWS_IoT` from the `Lab2` folder. Modify the secrets
    _SSID_, _PASS_ and _GROUP_.
 2. Broker can found in _AWS IoT_ page. From the left menu, go to _Settings_.
 3. Fill the `client_certificate` within the paranthesis `()` with text of
