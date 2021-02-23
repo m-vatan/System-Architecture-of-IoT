@@ -110,7 +110,7 @@ AWS.
 
 ## To do
 
-1. Understand the code
+1. Understand and quicly explain the code of the sketch `AWS_IoT`
 2. Explain your understanding of TLS/SSL mutual authentication mechanism with
    respect to the Arduino and AWS IoT core.  Make use of diagrams. Check the references for some useful references on this topic.
 3. What are the pros and cons of using TLS/SSL mutual authentication? (Check
