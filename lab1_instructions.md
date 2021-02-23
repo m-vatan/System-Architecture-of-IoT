@@ -109,7 +109,7 @@ latency. You will also implement logic to perform actuation on the sensor based
 on user commands.
 
 For the lab we will use Arduino IDE: https://www.arduino.cc/en/Main/Software
-The IDE is already avaialble from the provided VM and installed in the folder arduinoIDE, and should be start by executing the script _/.arduinoIDE/arduino_
+The IDE is already avaialble from the provided VM and installed in the folder arduino IDE, and should be start by executing the script _/.arduinoIDE/arduino_
 
 Please do the following:
 
@@ -132,8 +132,7 @@ sides of the central ridge of the breadboard and that all the pins are inserted
 in the breadboard. (See the image below or ask me if you're unsure).
 
 Now we will verify that Arduino IDE has read and write access to the Arduino
-board.  On Arduino Create, create a **New Sketch** and paste the code from
-the file `led.c` available from the folder Lab1. 
+board.  In the Arduino IDE, open the Sketch TestLed available from the folder Lab1. 
 
 Verify, upload and save the sketch to the Arduino MKR WiFi 1010 board. If
 everything goes well, you must see a yellow LED blinking on the board. You are done for the arduino setup as you verified you can compile and upload an exectable on the board.
@@ -170,9 +169,9 @@ same side as Vcc.
 
 ![](./figs/breadboard_mkr_1000.png)
 
-Once the hardware is setup, create a new sketch and paste the code from the file `mqtt_unsecure.c` available from the Lab1 folder.
+Once the hardware is setup, open the Sketch `mqtt_unsecure` available from the Lab1 folder.
 Have a look at the code and understand what it does before uploading the code.
-Use the provided WiFi username and password. Remember to installe the ArduinoMqttClient library (Tools->manage Library)
+Use the provided WiFi username and password. Remember to check the ArduinoMqttClient library (Tools->manage Library) was isntalled.
 Compile the code and upload it to the board. 
 
 Verify the state of the Arduino board by connecting to the *Monitor* in the
