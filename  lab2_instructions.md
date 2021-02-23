@@ -31,8 +31,7 @@ the private key and hence the device is secured against leaks in cases when
 access to device is compromised (conditions apply ;) ).
 
 1. To generate a certificate, open the sketch _ECC08CSR_ from the
-   `Lab2` folder.  If you are using Arduino Create, you may have to import
-   this sketch.  
+   `Lab2` folder. 
 2. Open *Monitor* (or *Serial Monitor*) and change *New Line* in the drop down
    to *Both NL & CR*.  Baud rate is set to 9600 by default. Compile and upload
    the sketch. (install the library ArduinoECCX08)
