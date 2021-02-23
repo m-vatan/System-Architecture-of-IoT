@@ -136,7 +136,7 @@ board.  On Arduino Create, create a **New Sketch** and paste the code from
 the file `led.c` available from the folder Lab1. 
 
 Verify, upload and save the sketch to the Arduino MKR WiFi 1010 board. If
-everything goes well, you must see a yellow LED blinking on the board.
+everything goes well, you must see a yellow LED blinking on the board. You are done for the arduino setup as you verified you can compile and upload an exectable on the board.
 
 ## MQTT Client Setup
 
