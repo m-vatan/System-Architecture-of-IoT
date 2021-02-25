@@ -93,7 +93,7 @@ You should:
 3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
 4. Check you can start the VM. 
 - **The used username and password is iotlabs/iotlabs.**
-- Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left. 
+- Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left). 
 - Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
 - The VM has Atom installed as a possible source code editor
 
@@ -226,7 +226,7 @@ forget to terminate with a Null character (`'\0'`) in the end.
 
 ## Wrap Up
 
-Well, that's it for this first lab. You can move the the 2nd lab!
+Well, that's it for this first lab. You can move to the 2nd lab!
 
 
 
