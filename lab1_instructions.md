@@ -93,7 +93,7 @@ You should:
 3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
 4. Plug the Arduino MKR Wifi 1010 with the USB cable to your laptop and be sure you enable the USB port controller and add the corresponding USB filter into the list of shared USB device (see screensot bellow)
 5. Check you can start the VM. 
-- **The used username and password is iotlabs/iotlabs.**
+- **The username and password are iotlabs/iotlabs.**
 - Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left). 
 - Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
 - The VM has Atom installed as a possible source code editor
@@ -132,10 +132,10 @@ sides of the central ridge of the breadboard and that all the pins are inserted
 in the breadboard. (See the image below or ask me if you're unsure).
 
 Now we will verify that Arduino IDE has read and write access to the Arduino
-board.  In the Arduino IDE, open the Sketch `TestLed` available from the folder Lab1. Select the board _MKR WiFI 1010_  (Tools->Board->SAMD 32-bits ARM cortex M0+Boards)
+board.  In the Arduino IDE, open the Sketch `TestLed` available from the folder Lab1. Select the board _MKR WiFI 1010_  (Tools->Board->SAMD 32-bits ARM cortex M0+Boards) and be sure you use the correct serial port (bellow the selected board in the Tools menu). You might need to re-active the USB sharing from the VirtualBox menu if you do not see the correct serial port from the listed option.
 
 Verify/compile and upload the sketch to the Arduino MKR WiFi 1010 board (in the menu Sketch->Verifu/Compile and Upload)). If
-everything goes well, you must see a yellow LED blinking on the board. You are done for the arduino setup as you verified you can compile and upload an exectable on the board.
+everything goes well, you must see a yellow LED blinking on the board. You are done for the arduino setup as you can compile and upload an program on the board from the virtual environment.
 
 ## MQTT Client Setup
 
