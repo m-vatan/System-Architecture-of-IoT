@@ -231,8 +231,8 @@ been used.
        `saiot/GROUPNAME/lambda`
     2. Lambda -> IoT Cloud. Lambda parses the message sent by the device and
        forwards it to IoT Cloud on topic `saiot/GROUPNAME/cloud`.
-3. Measure the transmission latency between the pubsub and lambda. Compare your
-   findings with the latency values from the previous lab.
+3. In your report describe the achieved architecture and behavior of your application (5p)
+4. In your report describe the behavior differences between a long-lived Lambda function and an on-demand Lambda function deployed on a gateway. Illustrate your response taking a simple application example and provide the corresponding sequence (UML) diagrams for each. (5p)
 
 ## Optional tasks
 
