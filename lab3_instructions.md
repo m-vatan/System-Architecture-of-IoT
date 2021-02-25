@@ -56,6 +56,7 @@ exercise and walks you through discovery and connection management.
    powered up and connected to network. To connect to the Raspberry Pi,
    you need the IP address of the gateway. The IP address should be given
    to you during the lab.
+   Of course to be able to reach your gateway from the VM, your laptop needs to be also conected to the same network (SSID BUFFALO2, same Wifi password as the one used by the Sketch _mqtt_unsecure_ in Lab1) 
 2. To connect to the gateway, in your VM open a terminal and ssh into it.
    The username is `pi` and password is `raspberry`.
    Commands run in Raspberry Pi is preceded `pi>` and in your VM as `vm>`.
@@ -102,8 +103,8 @@ exercise and walks you through discovery and connection management.
 2. Copy the archive to the Raspberry Pi. The following commands will be useful:
 
 	```bash
-    vagrant> scp CERT_FOLDER/GUID-setup.tar.gz pi@IPADDRESS:/home/pi
-    vagrant> scp CERT_FOLDER/greengrass-linux-armv7l*.tar.gz pi@IPADDRESS:/home/pi
+    VM> scp CERT_FOLDER/GUID-setup.tar.gz pi@IPADDRESS:/home/pi
+    VM> scp CERT_FOLDER/greengrass-linux-armv7l*.tar.gz pi@IPADDRESS:/home/pi
 	```
 	
 	The first command copies the security keys to the Raspberry Pi and second command copies the AWS Greengrass core binary to the Raspberry Pi.
