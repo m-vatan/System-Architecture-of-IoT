@@ -62,8 +62,6 @@ exercise and walks you through discovery and connection management.
    Commands run in Raspberry Pi is preceded `pi>` and in your VM as `vm>`.
 
    ```bash
-   $ vagrant up
-   $ vagrant ssh
    vm> ssh pi@IPADDRESS
    ```
 
@@ -111,7 +109,7 @@ exercise and walks you through discovery and connection management.
 3. Login to your assigned Raspberry Pi and extract the archives.
 
 	```bash
-    vagrant> ssh pi@IPADDRESS
+    vm> ssh pi@IPADDRESS
     pi> sudo tar -xzv -f greengrass-linux-armv7l*.tar.gz -C /
     pi> sudo tar -xzv -f GUID-setup.tar.gz -C /greengrass
 	```
@@ -224,11 +222,11 @@ of all the devices, subscriptions, policies etc. associated with our group.
 1. From _AWS IoT_ -> _Test_, setup a new subscriber to the topic
    _saiot/GROUPNAME/publish_ . Select _Display payloads as strings (more
    accurate)_ option and then _Subscribe to Topic_.
-2. In your vagrant container, run the following commands
+2. In your VM, run the following commands
     
     ```
-    vagrant> cd /vagrant/Publisher_Sim
-    vagrant> python3 ../pubSub.py -e ENDPOINT -r root_ca.pem -c publisher_sim.pem.crt -k publisher_sim-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -m publish -M "Hello World" 
+    vm> cd /vagrant/Publisher_Sim
+    vm> python3 ../pubSub.py -e ENDPOINT -r root_ca.pem -c publisher_sim.pem.crt -k publisher_sim-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -m publish -M "Hello World" 
     ```
     
     You can get the ENDPOINT from _AWS IoT_ -> _Settings_ and under _Custom
@@ -270,8 +268,8 @@ instead of `pubsub.py`. You also need to locate GROUPCA. It usually is in the
 `Publisher_Sim`.
 
 ```
-VM> cd /vagrant/Publisher_Sim
-VM> python3 snoopy.py -i IPADDRESS -c publisher_sim.pem.crt -g GROUPCA -k Snoopy_Subscriber_GROUPNAME/snoopy_subscriber-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -M "Snooping..."
+vm> cd /vagrant/Publisher_Sim
+vm> python3 snoopy.py -i IPADDRESS -c publisher_sim.pem.crt -g GROUPCA -k Snoopy_Subscriber_GROUPNAME/snoopy_subscriber-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -M "Snooping..."
 
 ```
 
