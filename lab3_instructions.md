@@ -201,7 +201,7 @@ gateway.
 1. In the group menu, select _Subscriptions_ and then _Add Subscription_.
 2. As a source, select your device `Publisher_GROUPNAME` situated under
    _Devices_.  As a target, select _IoT Cloud_. Click _Next_.
-3. Use `saiot/19/GROUPNAME/publish` as the publish topic, where GROUPNAME is a
+3. Use `saiot/GROUPNAME/publish` as the publish topic, where GROUPNAME is a
    unique name of your group. Click _Next_ and _Finish_.
 
 ## Deploy the changes
@@ -222,13 +222,13 @@ of all the devices, subscriptions, policies etc. associated with our group.
 ## Test the connection
 
 1. From _AWS IoT_ -> _Test_, setup a new subscriber to the topic
-   _saiot/19/GROUPNAME/publish_ . Select _Display payloads as strings (more
+   _saiot/GROUPNAME/publish_ . Select _Display payloads as strings (more
    accurate)_ option and then _Subscribe to Topic_.
 2. In your vagrant container, run the following commands
     
     ```
     vagrant> cd /vagrant/Publisher_Sim
-    vagrant> python3 ../pubSub.py -e ENDPOINT -r root_ca.pem -c publisher_sim.pem.crt -k publisher_sim-private.pem.key -n Publisher_GROUPNAME -t saiot/19/GROUPNAME/publish -m publish -M "Hello World" 
+    vagrant> python3 ../pubSub.py -e ENDPOINT -r root_ca.pem -c publisher_sim.pem.crt -k publisher_sim-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -m publish -M "Hello World" 
     ```
     
     You can get the ENDPOINT from _AWS IoT_ -> _Settings_ and under _Custom
@@ -270,8 +270,8 @@ instead of `pubsub.py`. You also need to locate GROUPCA. It usually is in the
 `Publisher_Sim`.
 
 ```
-vagrant> cd /vagrant/Publisher_Sim
-vagrant> python3 snoopy.py -i IPADDRESS -c publisher_sim.pem.crt -g GROUPCA -k Snoopy_Subscriber_GROUPNAME/snoopy_subscriber-private.pem.key -n Publisher_GROUPNAME -t saiot/19/GROUPNAME/publish -M "Snooping..."
+VM> cd /vagrant/Publisher_Sim
+VM> python3 snoopy.py -i IPADDRESS -c publisher_sim.pem.crt -g GROUPCA -k Snoopy_Subscriber_GROUPNAME/snoopy_subscriber-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -M "Snooping..."
 
 ```
 
