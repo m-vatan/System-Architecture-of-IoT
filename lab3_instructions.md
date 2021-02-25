@@ -245,10 +245,10 @@ of all the devices, subscriptions, policies etc. associated with our group.
    be found
    [here](https://s3.amazonaws.com/aws-iot-device-sdk-python-docs/sphinx/html/index.html#module-AWSIoTPythonSDK.core.greengrass.discovery.providers)
 2. Explain how the Thing connects to your gateway, including TLS mutual
-   authentication. Use relevant diagrams. Check the folder `groupCA` in your directory. (5p)
-3. Modify `pubSub.py` to measure the latency of transmission only. Use `time`
+   authentication. Use relevant diagrams. Check the folder `groupCA` in your directory. (3p)
+3. Modify `pubSub.py` to measure the latency of establishging the connection to the gateway. Use `time`
    module and use `perf_counter()` to measure the time. See
-   [documentation](https://docs.python.org/3/library/time.html#time.perf_counter) (5p)
+   [documentation](https://docs.python.org/3/library/time.html#time.perf_counter). Compare the measured time with the ping value optained from the VM to your gateway. (7p)
 
 ## Optional Tasks
 
