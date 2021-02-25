@@ -171,8 +171,8 @@ The simulated Thing will be your terminal from your computer. To create a new
 thing, we will create the key pair and register the public key with AWS IoT in
 one step. 
 
-1. Create a folder in `project_home` and call it `Publisher_Sim`. We will store
-   certificates related to the new thing here.
+1. In the VM, the folder `Publisher_Sim` will be used to store
+   certificates related to the new thing.
 2. From the left menu, go to _Greengrass_ and _Groups_.
 3. Click _Devices_ and _Add Device_.
 4. Choose _Create a new device_.
