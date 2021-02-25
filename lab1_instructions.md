@@ -214,8 +214,8 @@ mosquitto_pub -h broker.hivemq.com -t "commandTopic" -m "command"
     3. The **TEMP** command will send the temperature on the appropriate
        response topic, once.
     4. Any other command will not generate a response. 
-2. Modify the publisher to transmit messages only when an appropriate **TEMP** command (2p)
-   is received.
+2. Modify the publisher to transmit messages only when an appropriate **TEMP** command
+   is received. (2p)
 3. Test the implementation by sending the **ON**, **OFF** and **TEMP** commands on the relevant topic from your desktop machine (your ubuntu VM machine) (2p)
 4. In your report provide a block diagram of the implemented system and a screenshot of the implemented functions. (2p)
 
