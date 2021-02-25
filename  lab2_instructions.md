@@ -110,13 +110,13 @@ AWS.
 
 ## To do
 
-1. Understand and quicly explain the code of the sketch `AWS_IoT`
+1. Understand and explain the code of the sketch `AWS_IoT`. Take screenshot of received messages on the AWS dasboard. (4p)
 2. Explain your understanding of TLS/SSL mutual authentication mechanism with
-   respect to the Arduino and AWS IoT core.  Make use of diagrams. Check the references for some useful references on this topic.
+   respect to the Arduino and AWS IoT core.  Make use of diagrams. Check the references for some useful references on this topic. (2p)
 3. What are the pros and cons of using TLS/SSL mutual authentication? (Check
-   references)
+   references) (2p)
 4. Assuming that the symmetric encryption was carried out by the WiFi module,
-   what was the role of the crypto processor during the TLS/SSL handshake.
+   what was the role of the crypto processor during the TLS/SSL handshake. (2p)
 
 **When you are done, remember to delete the created thing(s) !**
 
