@@ -91,11 +91,14 @@ You should:
 1. Download and install Virtualbox on your laptop: https://www.virtualbox.org/wiki/Downloads 
 2. Download the VM from this link: TBD
 3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
-4. Check you can start the VM. 
+4. Plug the Arduino MKR Wifi 1010 with the USB cable to your laptop and be sure you enable the USB port controller and add the corresponding USB filter into the list of shared USB device (see screensot bellow)
+5. Check you can start the VM. 
 - **The used username and password is iotlabs/iotlabs.**
 - Feel free to change the screen resolution in ubuntu or to scale in/out the virtual screen (from the "screen logo" on the bottom left). 
 - Feel free to create a shared folder between your physical machine and VM (Settings->Shared folder). The following mount point can be used: /home/iotlabs/SharedFolder
 - The VM has Atom installed as a possible source code editor
+
+![](./figs/ShareUSB.png)
 
 ## Lab 1 - Before you begin,
 
