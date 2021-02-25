@@ -269,7 +269,7 @@ instead of `pubsub.py`. You also need to locate GROUPCA. It usually is in the
 
 ```
 vm> cd ./Publisher_Sim
-vm> python3 snoopy.py -i IPADDRESS -c publisher_sim.pem.crt -g GROUPCA -k Snoopy_Subscriber_GROUPNAME/snoopy_subscriber-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -M "Snooping..."
+vm> python3 ../Lab3/snoopy.py -i IPADDRESS -c publisher_sim.pem.crt -g GROUPCA -k Snoopy_Subscriber_GROUPNAME/snoopy_subscriber-private.pem.key -n Publisher_GROUPNAME -t saiot/GROUPNAME/publish -M "Snooping..."
 
 ```
 
