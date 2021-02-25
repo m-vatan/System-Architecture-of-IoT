@@ -193,10 +193,8 @@ mosquitto_sub -h broker.hivemq.com -t "responseTopic"
    [WiFiNINA](https://www.arduino.cc/en/Reference/WiFiNINA) and
    [ArduinoMqttClient](https://github.com/arduino-libraries/ArduinoMqttClient)
    library, although you don't have to explain the functionality in the report. (2p)
-2. Measure the latency of transmission. Use the function `micros()` to return the current
-state of the timer in microseconds. (2p) 
-3. What is the value returned by mqttClient.messageQoS() ? What does it means ? (2p)
-4. What is the value returned by mqttClient.messageRetain() ? What does it means ? (2p)
+2. What is the value returned by mqttClient.messageQoS() ? What does it means ? (2p)
+3. What is the value returned by mqttClient.messageRetain() ? What does it means ? (2p)
 
 ## Command and Reponse
 
