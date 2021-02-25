@@ -49,18 +49,12 @@ In your last lab exercise, you had installed AWS Greengrass runtime on the
 Raspberry Pi along with the security keys. We will start the runtime so that
 the edge connects to AWS Cloud services. 
 
-1. Navigate to `project_home` and update the repository.
-    ```
-    $ git reset --hard
-    $ git pull
-    ```
-
-2. Login to assigned Raspberry Pi
+1. Login to assigned Raspberry Pi
 	```
-	vagrant> ssh pi@IPADDRESS
+	vm> ssh pi@IPADDRESS
 	```
 
-3. Verify that the contents of `/greengrass/config/config.json` is valid. You
+2. Verify that the contents of `/greengrass/config/config.json` is valid. You
    can view the file by
 	```
 	pi> cat /greengrass/config/config.json
@@ -234,9 +228,9 @@ been used.
    setup you are looking at is given below. You can use `pubsub.py` to 
    publish messages from your device.
     1. Device -> Lambda. Device sends message on topic
-       `saiot/19/GROUPNAME/lambda`
+       `saiot/GROUPNAME/lambda`
     2. Lambda -> IoT Cloud. Lambda parses the message sent by the device and
-       forwards it to IoT Cloud on topic `saiot/19/GROUPNAME/cloud`.
+       forwards it to IoT Cloud on topic `saiot/GROUPNAME/cloud`.
 3. Measure the transmission latency between the pubsub and lambda. Compare your
    findings with the latency values from the previous lab.
 
@@ -259,7 +253,7 @@ You may have to modify `pubsub.py` suitably.
 
 To send the temperature, use `pubTemperature.py`. 
 
-All your topics should begin with `saiot/19/GROUPNAME`
+All your topics should begin with `saiot/GROUPNAME`
 
 Modify the initial Lambda code as you seem fit and establish necessary forward
 and backward connections to implement the scenario. 
