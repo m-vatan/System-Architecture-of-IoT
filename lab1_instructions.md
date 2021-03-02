@@ -79,7 +79,7 @@ The report should contain full name and student number of each group member.
 
 The expected size of this report is 8-12 pages of content.
 
-The hard deadline for submission is ***31.03.2021 23:55***
+The hard deadline for submission is ***XX.XX.2021 23:55***
 
 ## Setup your computer 
 To perform lab exercises, you need to setup your computer. No extra computers will be provided and it is your responsibility to setup your computer.
