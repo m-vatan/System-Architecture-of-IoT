@@ -79,7 +79,7 @@ The report should contain full name and student number of each group member.
 
 The expected size of this report is 8-12 pages of content.
 
-The hard deadline for submission is ***XX.XX.2021 23:55***
+The hard deadline for submission is ***15.04.2021 23:55***
 
 ## Setup your computer 
 To perform lab exercises, you need to setup your computer. No extra computers will be provided and it is your responsibility to setup your computer.
@@ -89,7 +89,7 @@ For the Labs your will use a Virtualbox Ubuntu-based virtual machine (VM) as a d
 You should:
 
 1. Download and install Virtualbox on your laptop: https://www.virtualbox.org/wiki/Downloads 
-2. Download the VM from this link: TBD
+2. Download the VM from this link: https://abofi-my.sharepoint.com/:u:/g/personal/sebastien_lafond_abo_fi/EYHg8l0LL2JGkkvzsTfXCboB-ZxZIEY5S9-2kp4VPGprFw?e=5byZ9b
 3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
 4. Plug the Arduino MKR Wifi 1010 with the USB cable to your laptop and be sure you enable the USB port controller and add the corresponding USB filter into the list of shared USB device (see screensot bellow)
 5. Check you can start the VM. 
