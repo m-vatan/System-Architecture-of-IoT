@@ -109,7 +109,7 @@ latency. You will also implement logic to perform actuation on the sensor based
 on user commands.
 
 For the lab we will use Arduino IDE: https://www.arduino.cc/en/Main/Software
-The IDE is already avaialble from the provided VM and installed in the folder _arduinoIDE_, and should be start by executing the script _/.arduinoIDE/arduino_
+The IDE is already avaialble from the provided VM and installed in the folder _arduinoIDE_, and should be start by executing the script _./arduinoIDE/arduino_
 
 Please do the following:
 
