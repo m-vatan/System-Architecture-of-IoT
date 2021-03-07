@@ -68,7 +68,7 @@ exercise and walks you through discovery and connection management.
 ## Setup a Greengrass Group
 
 1. Login to AWS console. Under _Services_,  _Internet of Things_, open _IoT Core_.
-2. From the left menu, select _Greengrass_ and select _Create a group_.
+2. From the left menu, select _Greengrass Classic V1_ and select _Create a group_. In this course we will only use **AWS IoT Greengrass V1**.
 3. Click on _Grant permission_
 3. Select _Easy Group creation (recommended)_ to generate certificates for the
    gateway.
