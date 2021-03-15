@@ -90,6 +90,11 @@ You should:
 
 1. Download and install Virtualbox on your laptop: https://www.virtualbox.org/wiki/Downloads 
 2. Download the VM from this link: https://abofi-my.sharepoint.com/:u:/g/personal/sebastien_lafond_abo_fi/EYHg8l0LL2JGkkvzsTfXCboB-ZxZIEY5S9-2kp4VPGprFw?e=5byZ9b
+
+If you have issues when importing the VM above, you should try this other version which uses the Open Virtualisation Format 2.0: https://abofi-my.sharepoint.com/:u:/g/personal/sebastien_lafond_abo_fi/Ed09uJ2Yy_ZGlkrKpQbTxqgB2egII5p7snbudWTdAiAkmw?e=kv9fwW
+
+If you have issue when booting the VM, you should try to enable "3D acceleration" in Settings->Display before starting the imported VM.
+
 3. Import the downloaded VM into Virtualbox by selecting the downloaded .ova file. The current VM has 4GB of RAM - Feel free to adjust it based on your own laptop configuration
 4. Plug the Arduino MKR Wifi 1010 with the USB cable to your laptop and be sure you enable the USB port controller and add the corresponding USB filter into the list of shared USB device (see screensot bellow)
 5. Check you can start the VM. 
