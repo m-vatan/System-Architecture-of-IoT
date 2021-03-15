@@ -178,7 +178,7 @@ same side as Vcc.
 
 Once the hardware is setup, open the Sketch `mqtt_unsecure` available from the Lab1 folder.
 Have a look at the code and understand what it does before uploading the code. Change the content of the variable _group = "MyGroup"_
-Use the provided WiFi username and password if needed (check the defined variable from the .h header file). Remember to check the ArduinoMqttClient library and WiFiNINA libraries (Tools->manage Library) were isntalled. Compile the code and upload it to the board. 
+Use the provided WiFi username and password if needed (check the defined variable from the .h header file). Remember to check the ArduinoMqttClient library and WiFiNINA libraries (Tools->manage Library) were installed. Compile the code and upload it to the board. 
 
 Verify the state of the Arduino board by connecting to the *Monitor* _(in Tools-> Serial monitor)_ in the
 IDE.  You can see the transmitted MQTT messages by subscribing on [broker.hivemq.com](http://www.mqtt-dashboard.com/index.html) to the relevant topic
