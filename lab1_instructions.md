@@ -91,7 +91,7 @@ You should:
 1. Download and install Virtualbox on your laptop: https://www.virtualbox.org/wiki/Downloads 
 2. Download the VM from this link: https://abofi-my.sharepoint.com/:u:/g/personal/sebastien_lafond_abo_fi/EWD1KYrk5SFGodFMVAcazS0BY70TteSb7HSuY2IvKLgP7A?e=RhyZJk
 
-**If you have issues when importing the above VM,** you should try this other version which uses the Open Virtualisation Format 2.0: https://abofi-my.sharepoint.com/:u:/g/personal/sebastien_lafond_abo_fi/Ed09uJ2Yy_ZGlkrKpQbTxqgB2egII5p7snbudWTdAiAkmw?e=kv9fwW
+**If you have issues when importing the above VM,** you should try this other version which uses the Open Virtualisation Format 2.0:https://abofi-my.sharepoint.com/:u:/g/personal/sebastien_lafond_abo_fi/Eb7x907amK9EksK2EbC8aJMBfSfJVjsf55Lay9wLXhT5rA?e=WcB4bf
 
 **If you have issue when booting the VM**, you should try to enable "3D acceleration" in Settings->Display before starting the imported VM.
 
